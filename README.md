@@ -12,7 +12,7 @@ joiner := mp3join.New()
 
 // readers is the input mp3 files
 for reader := range readers {
-    err := j.Append(reader)
+    err := joiner.Append(reader)
     if err != nil {
         return err
     }
